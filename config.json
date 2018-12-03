@@ -1,0 +1,19 @@
+{
+  "navig": [
+    {
+      "id": 1,
+      "title": "Home",
+      "slug": "/"
+    },
+    {
+      "id": 2,
+      "title": "About",
+      "slug": "/about"
+    },
+    {
+      "id": 3,
+      "title": "Contact",
+      "slug": "/contact"
+    }
+  ]
+}
