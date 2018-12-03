@@ -1,33 +1,35 @@
 <template>
   <nav>
-    <ul class="module">
-        <li v-bind:class="classObject('/')">
-            <router-link to="/">Home</router-link>
-        </li>
-        <li v-bind:class="classObject('/about')">
-            <router-link to="/about">About</router-link>
-        </li>
-        <li v-bind:class="classObject('/contact')">
-            <router-link to="/contact">Contact</router-link>
+      <ul class="module">
+        <li v-for="item in items" v-bind:key="item.id" v-bind:class="classObject(item.slug)">
+          <router-link v-bind:to="item.slug">{{ item.title }}</router-link>
         </li>
       </ul>
   </nav>
 </template>
 
 <script>
-export default {
-  computed: {
-      slug () {
-          return this.$route.path
-      },
-  },
+  import config from '../config.json'
 
-  methods: {
-      classObject (slug) {
-          return slug == this.$route.path ? 'active' : ''
+  export default {
+    data() {
+      return {
+        items: config.navig,
       }
+    },
+
+    computed: {
+        slug () {
+            return this.$route.path
+        },
+    },
+
+    methods: {
+        classObject (slug) {
+            return slug == this.$route.path ? 'active' : ''
+        }
+    }
   }
-}
 </script>
 
 <style>
@@ -56,7 +58,7 @@ export default {
     background: darkgrey;
     display: inline-block;
     margin-right: -1em;
-    margin-left: 17px;
+    margin-left: 22px;
   }
 
   nav li:first-child a {
