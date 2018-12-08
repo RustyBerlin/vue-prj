@@ -3,6 +3,7 @@ module.exports = {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: { lang: 'en' },
     title: 'My Vue Project',
     meta: [
       { charset: 'utf-8' },
