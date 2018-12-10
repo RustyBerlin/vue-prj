@@ -1,15 +1,19 @@
 <template>
-    <div class="hero">
-      My cool Hero
-    </div>
+  <div class="hero" v-bind:style="{ backgroundImage: 'url(' + hero.image + ')' }">
+    <router-link to="/">
+      {{ hero.title }}
+    </router-link>
+  </div>
 </template>
 
-<style>
-  .hero {
-    background: lightgreen;
-    padding: 30px 15px;
-    text-align: center;
-    font-size: 200%;
-    text-transform: uppercase;
+<script>
+  import config from '../config.json'
+
+  export default {
+    data() {
+      return {
+        hero: config.hero,
+      }
+    } 
   }
-</style>
+</script>

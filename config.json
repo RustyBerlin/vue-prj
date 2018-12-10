@@ -1,4 +1,8 @@
 {
+  "hero": {
+      "title": "My cool hero",
+      "image": "/hero.jpg"
+  },
   "navig": [
     {
       "id": 1,

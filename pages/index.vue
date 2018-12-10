@@ -3,7 +3,7 @@
     <Header/>
     <main>
       <div class="module">
-        <Headline headline='Welcome to my Website' />
+        <Headline headline='Welcome to My Website' />
         <section>
           <h2>H2 - Headline</h2>
           <p>
@@ -41,7 +41,4 @@
 
     }
   }
-
-  import Vue from 'vue'
-  import VueRouter from 'vue-router'
 </script>
