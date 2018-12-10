@@ -13,14 +13,3 @@
     </ul>
   </footer>
 </template>
-
-<style>
-  footer ul {
-    padding: 0;
-  }
-
-  footer li {
-    display: inline-block;
-  }
-</style>
-
