@@ -32,6 +32,7 @@
   import Header from '~/components/Header.vue'
   import Headline from '~/components/Headline.vue'
   import Footer from '~/components/Footer.vue'
+  import config from '../config.json'
 
   export default {
     components: {
@@ -39,6 +40,12 @@
       Headline,
       Footer
 
+    },
+
+    head() {
+      return {
+        title: 'About Me' + ' / ' + config.title
+      }
     }
   }
 </script>

@@ -14,7 +14,9 @@
     "test": "jest"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
