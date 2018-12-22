@@ -34,6 +34,8 @@
   import Footer from '~/components/Footer.vue'
   import config from '../config.json'
 
+  const pageTitle = 'Welcome'
+
   export default {
     components: {
       Header,
@@ -44,7 +46,7 @@
 
     head() {
       return {
-        title: 'Welcome' + ' / ' + config.title
+        title: `${pageTitle} / ${config.title}`
       }
     }
   }
