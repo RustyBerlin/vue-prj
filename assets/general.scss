@@ -1,0 +1,148 @@
+$color-background: white;
+$color-text: black;
+$color-link: green;
+$color-nav-background: lightgray;
+$color-nav-link: white;
+$color-nav-link-background: darkgrey;
+$color-nav-link-background--active: black;
+$color-nav-link-background--hover: black;
+$color-footer-background: lightgrey;
+$color-hero-background: black;
+$color-hero-link: white;
+$color-hero-link-shadow: black;
+
+$spacing: 15px;
+
+html {
+  font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  word-spacing: 1px;
+}
+
+body {
+  background: $color-background;
+  color: $color-text;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+a {
+  color: $color-link;
+}
+
+header, footer, main {
+  text-align:center;
+}
+
+header {
+  margin-bottom: $spacing;
+}
+
+nav {
+  background: $color-nav-background;
+  padding-right: $spacing;
+
+  .active a {
+    background: $color-nav-link-background--active;
+  }  
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+
+    &:first-child a {
+      margin-left: 1px;
+    }    
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-nav-link;
+    font-size: 130%;
+    padding: 5px $spacing;
+    background: $color-nav-link-background;
+    display: inline-block;
+    margin-right: -1em;
+    margin-left: 22px;
+
+    &:hover {
+      background: $color-nav-link-background--hover;
+    }    
+  }
+}
+
+main {
+  section {
+    padding-bottom: $spacing * 2;
+
+    &:last-child {
+      padding-bottom: $spacing;
+    }
+  }
+}
+
+footer, main {
+  padding: $spacing;
+}
+
+footer {
+  background: $color-footer-background;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    display: inline-block;
+  }
+}
+
+h1 {
+  padding-bottom: $spacing;
+}
+
+.module {
+  text-align: left;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.hero {
+  background-color: $color-hero-background;
+  background-repeat: no-repeat;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  font-size: 200%;
+  text-transform: uppercase;
+  height: 30vw;
+  max-height: 200px;
+  display: table;
+  width: 100%;
+
+  a {
+    display: table-cell;
+    vertical-align: middle;
+    height: 100%; 
+    padding: ($spacing * 2) $spacing;
+    color: $color-hero-link;
+    text-shadow: 2px 2px 4px $color-hero-link-shadow;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+  }
+}
