@@ -1,5 +1,6 @@
 {
   "title": "My Vue Project",
+  "breakpointMobile": 768,
   "hero": {
       "title": "My cool hero",
       "image": "/hero.jpg"
