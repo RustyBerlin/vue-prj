@@ -11,21 +11,37 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint",
-    "test": "jest"
+    "test": "jest ./tests/unit"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "@nuxtjs/component-cache": "^1.1.1",
+    "@nuxtjs/sentry": "^1.0.3",
+    "@vue/test-utils": "^1.0.0-beta.25",
+    "lodash": "^4.17.5",
+    "moxios": "^0.4.0",
+    "nuxt": "1.4.4",
+    "vue": "^2.5.17",
+    "vuex": "3.0.1"
   },
   "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@types/jest": "^20.0.2",
+    "babel-core": "7.0.0-bridge.0",
     "babel-eslint": "^10.0.1",
+    "babel-jest": "^23.6.0",
+    "babel-polyfill": "^6.26.0",
     "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
     "eslint-friendly-formatter": "^4.0.1",
     "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "2.7.0",
     "eslint-plugin-vue": "^4.0.0",
     "jest": "^23.6.0",
-    "node-sass": "^4.11.0",
-    "sass-loader": "^7.1.0"
+    "node-sass": "^4.9.4",
+    "sass-loader": "^6.0.6",
+    "vue-jest": "^3.0.0"
   }
 }

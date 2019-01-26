@@ -6,8 +6,8 @@
 </template>
 
 <script>
-  import Hero from '~/components/Hero.vue'
-  import Navigation from '~/components/Navigation.vue'
+  import Hero from './Hero.vue'
+  import Navigation from './Navigation.vue'
 
   export default {
     components: {
