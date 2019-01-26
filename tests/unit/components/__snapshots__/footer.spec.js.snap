@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test snapshot 1`] = `"<footer><ul class=\\"module\\"><li><a>Home</a></li> <li><a>Imprint</a></li> <li><a href=\\"#top\\">Top</a></li></ul></footer>"`;

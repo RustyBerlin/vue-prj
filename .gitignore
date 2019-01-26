@@ -11,4 +11,4 @@ npm-debug.log
 dist
 
 # Test results
-TEST_RESULTS
+_TEST_RESULTS_

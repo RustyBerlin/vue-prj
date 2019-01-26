@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Headline snapshot 1`] = `
+exports[`Test snapshot 1`] = `
 "<h1>
   Headline
 </h1>"

@@ -5,13 +5,12 @@ module.exports = {
     'js',
     'vue',
   ],
-  modulePathIgnorePatterns: ['core', 'tests/unit/sites/_____mobile'],
   transform: {
     '^.+\\.js$': 'babel-jest',
     '.*\\.(vue)$': 'vue-jest',
   },
   coverageReporters: ['html', 'clover', 'cobertura'],
-  coverageDirectory: '<rootDir>/TEST_RESULTS/unit',
+  coverageDirectory: '<rootDir>/_TEST_RESULTS_/unit',
   coverageThreshold: {
     './components': {
       statements: 90,
