@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test snapshot 1`] = `"<nav><div class=\\"ham\\"></div> <ul class=\\"module\\"><li class=\\"active\\"><a>Home</a></li><li class=\\"\\"><a>About</a></li><li class=\\"\\"><a>Contact</a></li></ul></nav>"`;
