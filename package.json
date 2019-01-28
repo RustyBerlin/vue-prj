@@ -1,26 +1,29 @@
 {
-  "name": "project-vue",
+  "name": "project-vue-nuxt",
   "version": "1.0.0",
-  "description": "project-nuxt",
-  "author": "rusty",
+  "description": "Vue Nuxt project",
+  "author": "RustyBerlin",
   "private": true,
+  "keywords": ["vue", "nuxt"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RustyBerlin/vue-prj.git"
+  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
+    "generate": "jest ./tests/unit && nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint",
     "test": "jest ./tests/unit"
   },
   "dependencies": {
     "@nuxtjs/component-cache": "^1.1.1",
     "@nuxtjs/sentry": "^1.0.3",
     "@vue/test-utils": "^1.0.0-beta.25",
-    "lodash": "^4.17.5",
-    "moxios": "^0.4.0",
     "nuxt": "1.4.4",
     "vue": "^2.5.17",
+    "vue-template-compiler": "^2.5.22",
     "vuex": "3.0.1"
   },
   "devDependencies": {
