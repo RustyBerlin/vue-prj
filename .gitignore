@@ -12,3 +12,6 @@ dist
 
 # Test results
 _TEST_RESULTS_
+
+# package-lock.json
+package-lock.json
