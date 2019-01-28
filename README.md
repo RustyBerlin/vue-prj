@@ -16,7 +16,7 @@ $ yarn build
 $ yarn start
 
 # generate static project
-$ yarn run generate
+$ yarn generate
 
 # run test
 $ yarn run test
