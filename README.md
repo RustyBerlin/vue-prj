@@ -19,11 +19,10 @@ $ yarn start
 $ yarn generate
 
 # run test
-$ yarn run test
+$ yarn test
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
 
 # Demo Page
-
 http://vue.baradari.de
