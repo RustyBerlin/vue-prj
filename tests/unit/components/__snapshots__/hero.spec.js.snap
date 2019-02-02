@@ -1,0 +1,7 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test snapshot 1`] = `
+"<div class=\\"hero\\" style=\\"background-image: url(/hero.jpg);\\"><a>
+    My cool hero
+  </a></div>"
+`;
