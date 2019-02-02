@@ -4,7 +4,10 @@
   "description": "Vue Nuxt project",
   "author": "RustyBerlin",
   "private": true,
-  "keywords": ["vue", "nuxt"],
+  "keywords": [
+    "vue",
+    "nuxt"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/RustyBerlin/vue-prj.git"
