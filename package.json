@@ -26,6 +26,7 @@
     "@vue/test-utils": "^1.0.0-beta.25",
     "nuxt": "1.4.4",
     "vue": "^2.5.17",
+    "vue-carousel": "^0.18.0-alpha",
     "vue-template-compiler": "^2.5.22",
     "vuex": "3.0.1"
   },
