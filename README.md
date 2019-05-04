@@ -21,13 +21,19 @@ $ yarn generate
 # run unit tests
 $ yarn test
 
-#run unit test with watcher
+# run unit test with watcher
 $ yarn run test --watchAll
 
-#run unit test with coverage
+# run unit test with coverage
 $ yarn run test --coverage
 
-#run cypress test
+# run lint test
+$ yarn lint
+
+# run lint test with auto fix
+$ yarn lint --fix
+
+# run cypress test
 $ yarn build && yarn run cypress open | yarn start
 ```
 
