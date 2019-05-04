@@ -40,6 +40,7 @@
     "babel-eslint": "^10.0.1",
     "babel-jest": "^23.6.0",
     "babel-polyfill": "^6.26.0",
+    "cypress": "^3.2.0",
     "eslint": "^4.19.1",
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-friendly-formatter": "^4.0.1",

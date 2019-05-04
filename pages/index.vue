@@ -48,14 +48,14 @@
 </template>
 
 <script>
-  import config from '../config.json'
-  import Header from '~/components/Header.vue'
-  import Headline from '~/components/Headline.vue'
-  import Footer from '~/components/Footer.vue'
-  import Carousel from 'vue-carousel/src/Carousel.vue'
-  import Slide from 'vue-carousel/src/Slide.vue'
+  import config from '../config.json';
+  import Header from '~/components/Header.vue';
+  import Headline from '~/components/Headline.vue';
+  import Footer from '~/components/Footer.vue';
+  import Carousel from 'vue-carousel/src/Carousel.vue';
+  import Slide from 'vue-carousel/src/Slide.vue';
 
-  const pageTitle = 'Welcome'
+  const pageTitle = 'Welcome';
 
   export default {
     components: {
