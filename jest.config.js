@@ -18,12 +18,6 @@ module.exports = {
       functions: 70,
       branches: 70,
     },
-    './store': {
-      statements: 100,
-      lines: 100,
-      functions: 100,
-      branches: 100,
-    },
   },
   coveragePathIgnorePatterns: [
     '/node_modules/',

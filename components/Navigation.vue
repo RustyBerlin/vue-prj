@@ -13,11 +13,18 @@
   import config from '../config.json'
 
   export default {
-    mounted() {
-      this.checkNav()
+    mounted () {
+      this.$nextTick(() => {
+        window.addEventListener('resize',  this.checkNav)
+        this.checkNav()
+      })
     },
 
-    data() {
+    beforeDestroy () {
+      window.removeEventListener('resize', this.checkNav)
+    },
+
+    data () {
       return {
         items: config.navig,
         breakpointMobile: config.breakpointMobile,
@@ -25,22 +32,22 @@
       }
     },
 
-    computed: {
-      slug () {
-        return this.$route.path
-      },
-    },
-
     methods: {
       classObject (slug) {
         return slug == this.$route.path ? 'active' : ''
       },
+
       navOpenClose () {
-        this.isNavOpen == false ? this.isNavOpen = true : this.isNavOpen = false
+        this.isNavOpen === false ? this.isNavOpen = true : this.isNavOpen = false
       },
+
       checkNav () {
-        window.innerWidth > this.breakpointMobile ? this.isNavOpen = true : this.isNavOpen = false
+        this.isNavOpen = false
+        if (window.innerWidth > this.breakpointMobile) {
+          this.isNavOpen = true
+        }
       },
+
     }
   }
 </script>

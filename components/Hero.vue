@@ -10,7 +10,7 @@
   import config from '../config.json'
 
   export default {
-    data() {
+    data () {
       return {
         hero: config.hero,
       }
