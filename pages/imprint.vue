@@ -29,12 +29,12 @@
 </template>
 
 <script>
-  import Header from '~/components/Header.vue'
-  import Headline from '~/components/Headline.vue'
-  import Footer from '~/components/Footer.vue'
-  import config from '../config.json'
+  import Header from '~/components/Header.vue';
+  import Headline from '~/components/Headline.vue';
+  import Footer from '~/components/Footer.vue';
+  import config from '../config.json';
 
-  const pageTitle = 'Imprint'
+  const pageTitle = 'Imprint';
 
   export default {
     components: {

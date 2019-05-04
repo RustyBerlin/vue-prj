@@ -10,18 +10,18 @@
 </template>
 
 <script>
-  import config from '../config.json'
+  import config from '../config.json';
 
   export default {
     mounted () {
       this.$nextTick(() => {
-        window.addEventListener('resize',  this.checkNav)
-        this.checkNav()
+        window.addEventListener('resize',  this.checkNav);
+        this.checkNav();
       })
     },
 
     beforeDestroy () {
-      window.removeEventListener('resize', this.checkNav)
+      window.removeEventListener('resize', this.checkNav);
     },
 
     data () {
@@ -34,18 +34,15 @@
 
     methods: {
       classObject (slug) {
-        return slug == this.$route.path ? 'active' : ''
+        return slug == this.$route.path ? 'active' : '';
       },
 
       navOpenClose () {
-        this.isNavOpen === false ? this.isNavOpen = true : this.isNavOpen = false
+        this.isNavOpen === false ? this.isNavOpen = true : this.isNavOpen = false;
       },
 
       checkNav () {
-        this.isNavOpen = false
-        if (window.innerWidth > this.breakpointMobile) {
-          this.isNavOpen = true
-        }
+        window.innerWidth > this.breakpointMobile ? this.isNavOpen = true : this.isNavOpen = false;
       },
 
     }

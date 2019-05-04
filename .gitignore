@@ -15,3 +15,6 @@ _TEST_RESULTS_
 
 # package-lock.json
 package-lock.json
+
+#cypress videos
+cypress/videos

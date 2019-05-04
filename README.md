@@ -18,8 +18,17 @@ $ yarn start
 # generate static project
 $ yarn generate
 
-# run test
+# run unit tests
 $ yarn test
+
+#run unit test with watcher
+$ yarn run test --watchAll
+
+#run unit test with coverage
+$ yarn run test --coverage
+
+#run cypress test
+$ yarn build && yarn start | yarn run cypress open
 ```
 
 For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
