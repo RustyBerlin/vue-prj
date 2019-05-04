@@ -4,3 +4,7 @@ nuxt.config.js
 cypress/*
 tests/*
 _TEST_RESULTS_/*
+.nuxt/*
+node_modules/*
+dist/*
+
