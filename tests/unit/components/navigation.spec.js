@@ -32,9 +32,18 @@ describe('Test', () => {
     expect(wrapper.contains('ul.hide')).not.toBe(true)
     wrapper.find('div.ham').trigger('click')
     expect(wrapper.contains('ul.hide')).toBe(true)
+    wrapper.find('div.ham').trigger('click')
+    expect(wrapper.contains('ul.hide')).not.toBe(true)
   })
 
-  test('check active link', () => {
-    expect(wrapper.contains('nav ul li.active')).toBe(true)
+  test('check first active link', () => {
+    expect(wrapper.contains('nav ul li:nth-child(1).active')).toBe(true)
+  })
+
+  test('check nav type of viewport', () => {
+    expect(wrapper.vm.isNavOpen).toBe(true)
+    global.innerWidth = 500
+    global.dispatchEvent(new Event('resize'))
+    expect(wrapper.vm.isNavOpen).toBe(false)
   })
 })

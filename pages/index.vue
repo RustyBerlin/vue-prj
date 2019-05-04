@@ -64,15 +64,14 @@
       Footer,
       Carousel,
       Slide,
-
     },
 
-    head() {
+    head () {
       return {
         title: `${pageTitle} / ${config.title}`
       }
     },
-    data() {
+    data () {
       return {
         hero: config.hero,
       }

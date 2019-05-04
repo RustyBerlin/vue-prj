@@ -40,11 +40,10 @@
     components: {
       Header,
       Headline,
-      Footer
-
+      Footer,
     },
 
-    head() {
+    head () {
       return {
         title: `${pageTitle} / ${config.title}`
       }
