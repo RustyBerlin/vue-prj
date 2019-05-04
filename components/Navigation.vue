@@ -10,41 +10,48 @@
 </template>
 
 <script>
-  import config from '../config.json';
+import config from '../config.json';
 
-  export default {
-    mounted () {
-      this.$nextTick(() => {
-        window.addEventListener('resize',  this.checkNav);
-        this.checkNav();
-      })
+export default {
+  mounted() {
+    this.$nextTick(() => {
+      window.addEventListener('resize', this.checkNav);
+      this.checkNav();
+    });
+  },
+
+  beforeDestroy() {
+    window.removeEventListener('resize', this.checkNav);
+  },
+
+  data() {
+    return {
+      items: config.navig,
+      breakpointMobile: config.breakpointMobile,
+      isNavOpen: true,
+    };
+  },
+
+  methods: {
+    classObject(slug) {
+      return slug === this.$route.path ? 'active' : '';
     },
 
-    beforeDestroy () {
-      window.removeEventListener('resize', this.checkNav);
-    },
-
-    data () {
-      return {
-        items: config.navig,
-        breakpointMobile: config.breakpointMobile,
-        isNavOpen: true,
+    navOpenClose() {
+      if (this.isNavOpen === false) {
+        this.isNavOpen = true;
+      } else {
+        this.isNavOpen = false;
       }
     },
 
-    methods: {
-      classObject (slug) {
-        return slug == this.$route.path ? 'active' : '';
-      },
+    checkNav() {
+      this.isNavOpen = false;
+      if (window.innerWidth > this.breakpointMobile) {
+        this.isNavOpen = true;
+      }
+    },
 
-      navOpenClose () {
-        this.isNavOpen === false ? this.isNavOpen = true : this.isNavOpen = false;
-      },
-
-      checkNav () {
-        window.innerWidth > this.breakpointMobile ? this.isNavOpen = true : this.isNavOpen = false;
-      },
-
-    }
-  }
+  },
+};
 </script>

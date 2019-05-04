@@ -2,8 +2,8 @@ import { mount, RouterLinkStub, createLocalVue } from '@vue/test-utils';
 import Component from '../../../components/Navigation.vue';
 
 const $route = {
-  path: '/'
-}
+  path: '/',
+};
 
 describe('Test', () => {
   let wrapper;
@@ -13,7 +13,7 @@ describe('Test', () => {
   beforeEach(() => {
     wrapper = mount(Component, {
       mocks: {
-        $route
+        $route,
       },
       localVue,
     });

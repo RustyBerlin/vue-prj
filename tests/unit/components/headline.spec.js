@@ -3,12 +3,12 @@ import Component from '../../../components/Headline.vue';
 
 describe('Test', () => {
   let wrapper;
-  let headline = 'Headline';
+  const headline = 'Headline';
 
   beforeEach(() => {
     wrapper = shallowMount(Component, {
       propsData: {
-        headline: headline,
+        headline,
       },
     });
   });

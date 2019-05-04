@@ -7,13 +7,13 @@
 </template>
 
 <script>
-  import config from '../config.json';
+import config from '../config.json';
 
-  export default {
-    data () {
-      return {
-        hero: config.hero,
-      }
-    } 
-  }
+export default {
+  data() {
+    return {
+      hero: config.hero,
+    };
+  },
+};
 </script>

@@ -6,13 +6,13 @@
 </template>
 
 <script>
-  import Hero from './Hero.vue';
-  import Navigation from './Navigation.vue';
+import Hero from './Hero.vue';
+import Navigation from './Navigation.vue';
 
-  export default {
-    components: {
-      Hero,
-      Navigation,
-    }
-  }  
+export default {
+  components: {
+    Hero,
+    Navigation,
+  },
+};
 </script>
