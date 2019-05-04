@@ -22,7 +22,7 @@ describe('Test', () => {
       'a',
     ];
 
-    htmlElements.forEach(element => {
+    htmlElements.forEach((element) => {
       expect(wrapper.contains(element)).toBe(true);
     });
   });

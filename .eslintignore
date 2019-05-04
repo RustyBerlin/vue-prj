@@ -1,0 +1,6 @@
+jest.config.js
+babel.config.js
+nuxt.config.js
+cypress/*
+tests/*
+_TEST_RESULTS_/*
