@@ -8,10 +8,6 @@
     "vue",
     "nuxt"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/RustyBerlin/vue-prj.git"
-  },
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
@@ -22,7 +18,6 @@
   },
   "dependencies": {
     "@nuxtjs/component-cache": "^1.1.1",
-    "@nuxtjs/sentry": "^1.0.3",
     "@vue/test-utils": "^1.0.0-beta.25",
     "nuxt": "1.4.4",
     "vue": "^2.5.17",
