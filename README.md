@@ -37,7 +37,7 @@ $ yarn lint --fix
 $ yarn build && yarn run cypress open | yarn start
 ```
 
-For detailed explanation on how things work, checkout the [Nuxt.js docs](https://github.com/nuxt/nuxt.js).
+Tested with node.js version: 13.14.0
 
 # Demo Page
 http://vue.baradari.de
