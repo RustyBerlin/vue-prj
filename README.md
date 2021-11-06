@@ -1,6 +1,6 @@
 # Vue Nuxt project
 
-> project-vue-nuxt
+Template for a simple Vue / Nuxt website. The project also includes unit tests and end-to-end tests. The codebase is free to use.
 
 ## Build Setup
 
