@@ -41,6 +41,3 @@ Tested with node.js version: 13.14.0
 
 # Demo Page
 http://vue.baradari.de
-
-# Page Speed Check
-https://developers.google.com/speed/pagespeed/insights/?hl=de&url=http%3A%2F%2Fvue.baradari.de%2F
